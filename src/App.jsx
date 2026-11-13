@@ -1,20 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
-import CreateReport from './pages/CreateReport';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import { ReportesProvider } from './context/ReportesContext';
+import { BarraNavegacion } from './components/layout/BarraNavegacion';
+import { AppRouter } from './routes/AppRouter';
 
-function App() {
+/**
+ * Componente raíz de la aplicación EcoReporte.
+ */
+export function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/nuevo-reporte" element={<CreateReport />} />
-      </Routes>
-    </Router>
+    <BrowserRouter>
+      <AuthProvider>
+        <ReportesProvider>
+          <BarraNavegacion />
+          <main>
+            <AppRouter />
+          </main>
+        </ReportesProvider>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

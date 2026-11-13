@@ -1,16 +1,20 @@
-# React + Vite
+# Ecoreporte - Plataforma de Gestión de Incidencias Ambientales
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Plataforma web enfocada en la gestión comunitaria e institucional de incidencias ambientales (vertimientos de basuras, tala ilegal, contaminación de fuentes hídricas). Permite a los ciudadanos radicar reportes georreferenciados con evidencias multimedia y al personal administrativo clasificar y programar la atención técnica de las mismas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚙️ Requisitos Previos e Instalación
 
-## React Compiler
+### Requisitos del Sistema
+- **Node.js**: v18.x o superior
+- **MySQL Server**: v8.0 o superior
+- **Git**: v2.x
+- **Gestor de paquetes**: npm (incluido en Node.js)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Instrucciones de Instalación y Ejecución
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+#### 1. Clonar el Repositorio
+```bash
+git clone [https://github.com/angiepaola1996sg-hash/ecoreporte-frontend.git](https://github.com/angiepaola1996sg-hash/ecoreporte-frontend.git)
+cd ecoreporte-frontend
